@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+$primary-color: #474785;
+
+a, .text-primary {
+  color: $primary-color !important;
+}
+
+.navbar-dark {
+  background: $primary-color !important;
+  .navbar-brand {
+    color: #fff !important;
+  }
+}
+
+.navbar-nav > .nav-item {
+  font-size: 1.5em;
+  padding: 0 .5em;
+}
+
+.main-article {
+  background: $primary-color !important
+}
+
+.tech-blog-bg {
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/circuit.png');
+
+}
+
+.personal-blog-bg {
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png');
+
+}
+
+.lists-bg {
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png');
+}
+
+.creativeworks-bg {
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png')
+}
