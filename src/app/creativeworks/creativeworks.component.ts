@@ -1,17 +1,17 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute, Router, ROUTES} from '@angular/router';
-
-declare var ng: any;
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-creativeworks',
-  templateUrl: './creativeworks.component.html',
-  styleUrls: ['./creativeworks.component.css'],
-  preserveWhitespaces: true,
-  encapsulation: ViewEncapsulation.Emulated
-
+  template: `
+    <app-blog [title]="title" [blog]="blog"></app-blog>
+  `,
 })
 export class CreativeworksComponent implements OnInit {
+
+  title = 'Trabajos';
+  blog = 'creativeworks';
+
   ngOnInit() {}
 
   constructor(private router: Router, private route: ActivatedRoute) {

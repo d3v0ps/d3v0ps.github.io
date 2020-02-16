@@ -45,7 +45,7 @@ export class AppComponent {
       isSpecial: true,
     },
     {
-      slug: 'infiniteloop/index',
+      slug: 'infiniteloop/angular-reviews',
       label: 'In Finite Loop'
     },
     {
@@ -61,11 +61,11 @@ export class AppComponent {
       label: 'Lists'
     },
     {
-      slug: 'creativeworks/videos',
+      slug: 'creativeworks/oss',
       label: 'Creative Works'
     },
     {
-      slug: 'persona/about-me',
+      slug: 'persona/sobre-mi',
       label: 'Persona'
     }
   ];

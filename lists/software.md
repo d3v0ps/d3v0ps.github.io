@@ -7,7 +7,7 @@ order: 0
 
 # Recomendaciones de Software
 
-### [Visual Studio Code](code)
+### 1. [Visual Studio Code](code)
 [![code][code-cover]][code]
 
 [code]: https://code.visualstudio.com/

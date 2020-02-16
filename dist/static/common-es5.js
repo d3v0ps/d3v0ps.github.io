@@ -41,6 +41,169 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/shared/blog/blog.component.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/shared/blog/blog.component.ts ***!
+    \***********************************************/
+
+  /*! exports provided: BlogComponent */
+
+  /***/
+  function srcAppSharedBlogBlogComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BlogComponent", function () {
+      return BlogComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @scullyio/ng-lib */
+    "./node_modules/@scullyio/ng-lib/__ivy_ngcc__/fesm2015/scullyio-ng-lib.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
+    /* harmony import */
+
+
+    var _links_list_links_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../links-list/links-list.component */
+    "./src/app/shared/links-list/links-list.component.ts");
+
+    var BlogComponent =
+    /*#__PURE__*/
+    function () {
+      function BlogComponent(scully, titleService) {
+        _classCallCheck(this, BlogComponent);
+
+        this.scully = scully;
+        this.titleService = titleService;
+        this.title = '';
+        this.blog = '';
+      }
+
+      _createClass(BlogComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this = this;
+
+          this.scully.getCurrent().subscribe(function (data) {
+            return _this.titleService.setTitle("d3v0ps | ".concat(data.title));
+          });
+        }
+      }]);
+
+      return BlogComponent;
+    }();
+
+    BlogComponent.ɵfac = function BlogComponent_Factory(t) {
+      return new (t || BlogComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyRoutesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]));
+    };
+
+    BlogComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: BlogComponent,
+      selectors: [["app-blog"]],
+      inputs: {
+        title: "title",
+        blog: "blog"
+      },
+      decls: 10,
+      vars: 2,
+      consts: [[1, "navbar", "navbar-dark", "bg-dark", "justify-content-between"], [1, "navbar-brand"], [1, "container-fluid", "my-4"], [1, "row"], [1, "col-md-3", "col-12", "mb-2"], [3, "blog"], [1, "col"], [1, "card", "article", "p-4"]],
+      template: function BlogComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "app-links-list", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "scully-content");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.title);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("blog", ctx.blog);
+        }
+      },
+      directives: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_3__["LinksListComponent"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyContentComponent"]],
+      styles: ["[_ngcontent-%COMP%]::slotted(h1)  {\n        color:rgb(51, 6, 37);\n        background-color: rgb(248, 211, 236);\n        padding: 5px;\n        border-radius: 5px;\n        width: fit-content;\n      }"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BlogComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-blog',
+          template: "\n    <nav class=\"navbar navbar-dark bg-dark justify-content-between\">\n      <a class=\"navbar-brand\">{{ title }}</a>\n    </nav>\n\n    <div class=\"container-fluid my-4\">\n      <div class=\"row\">\n\n        <div class=\"col-md-3 col-12 mb-2\">\n          <app-links-list [blog]=\"blog\"></app-links-list>\n        </div>\n\n        <div class=\"col\">\n          <div class=\"card article p-4\">\n            <scully-content></scully-content>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  ",
+          styles: ["\n      ::slotted(h1)  {\n        color:rgb(51, 6, 37);\n        background-color: rgb(248, 211, 236);\n        padding: 5px;\n        border-radius: 5px;\n        width: fit-content;\n      }\n    "]
+        }]
+      }], function () {
+        return [{
+          type: _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyRoutesService"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]
+        }];
+      }, {
+        title: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }],
+        blog: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }]
+      });
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/shared/links-list/links-list.component.ts":
   /*!***********************************************************!*\
     !*** ./src/app/shared/links-list/links-list.component.ts ***!
@@ -100,13 +263,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var link_r1 = ctx.$implicit;
+        var link_r3 = ctx.$implicit;
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", link_r1.route, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", link_r3.route, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](link_r1.title);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](link_r3.title);
       }
     }
 
@@ -124,10 +287,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(LinksListComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this = this;
+          var _this2 = this;
 
           this.links$ = this.scully.available$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(function (links) {
-            return Object(src_app_core_get_sorted_links__WEBPACK_IMPORTED_MODULE_2__["default"])(links, _this.blog);
+            return Object(src_app_core_get_sorted_links__WEBPACK_IMPORTED_MODULE_2__["default"])(links, _this2.blog);
           }));
         }
       }]);
@@ -229,6 +392,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./links-list/links-list.component */
     "./src/app/shared/links-list/links-list.component.ts");
+    /* harmony import */
+
+
+    var _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./blog/blog.component */
+    "./src/app/shared/blog/blog.component.ts");
+    /* harmony import */
+
+
+    var _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @scullyio/ng-lib */
+    "./node_modules/@scullyio/ng-lib/__ivy_ngcc__/fesm2015/scullyio-ng-lib.js");
 
     var SharedModule = function SharedModule() {
       _classCallCheck(this, SharedModule);
@@ -241,14 +416,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       factory: function SharedModule_Factory(t) {
         return new (t || SharedModule)();
       },
-      imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]]
+      imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_4__["ScullyLibModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](SharedModule, {
-        declarations: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"]],
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]],
-        exports: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"]]
+        declarations: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"]],
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_4__["ScullyLibModule"]],
+        exports: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"]]
       });
     })();
     /*@__PURE__*/
@@ -258,9 +433,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SharedModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]],
-          declarations: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"]],
-          exports: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"]]
+          imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_4__["ScullyLibModule"]],
+          declarations: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"]],
+          exports: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_2__["LinksListComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"]]
         }]
       }], null, null);
     })();

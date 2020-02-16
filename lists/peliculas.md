@@ -7,22 +7,22 @@ order: 1
 
 # Recomendaciones de Películas
 
-### [Synecdoche, New York](synecdoche)
+### 1. [Synecdoche, New York](synecdoche)
 [![Synecdoche][synecdoche-cover]][synecdoche]
 
-### [Las vidas posibles de Mr. Nobody][nobody]
+### 2. [Las vidas posibles de Mr. Nobody][nobody]
 [![nobody][nobody-cover]][nobody]
 
-### [Her][her]
+### 3. [Her][her]
 [![her][her-cover]][her]
 
-### [Perfect Blue][perfect-blue]
+### 4. [Perfect Blue][perfect-blue]
 [![perfect-blue][perfect-blue-cover]][perfect-blue]
 
-### [OXV: The Manual (Frequencies)][frequencies]
+### 5. [OXV: The Manual (Frequencies)][frequencies]
 [![Frequencies][frequencies-cover]][frequencies]
 
-### [Langosta][lobster]
+### 6. [Langosta][lobster]
 [![Langosta][lobster-cover]][lobster]
 
 [synecdoche]: https://www.filmaffinity.com/es/film296292.html

@@ -1,17 +1,17 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute, Router, ROUTES} from '@angular/router';
 
-declare var ng: any;
-
 @Component({
   selector: 'app-lists',
-  templateUrl: './lists.component.html',
-  styleUrls: ['./lists.component.css'],
-  preserveWhitespaces: true,
-  encapsulation: ViewEncapsulation.Emulated
-
+  template: `
+    <app-blog [title]="title" [blog]="blog"></app-blog>
+  `,
 })
 export class ListsComponent implements OnInit {
+
+  title = 'Listas de Recomendaciones';
+  blog = 'lists';
+
   ngOnInit() {}
 
   constructor(private router: Router, private route: ActivatedRoute) {

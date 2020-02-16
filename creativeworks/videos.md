@@ -2,6 +2,7 @@
 title: Videos
 description: Videos
 publish: true
+order: 1
 ---
 
 # Videos

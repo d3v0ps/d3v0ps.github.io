@@ -1,13 +1,15 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-persona',
-  templateUrl: './persona.component.html',
-  styleUrls: ['./persona.component.css'],
-  preserveWhitespaces: true,
-  encapsulation: ViewEncapsulation.Emulated
-
+  template: `
+    <app-blog [title]="title" [blog]="blog"></app-blog>
+  `
 })
 export class PersonaComponent implements OnInit {
+
+  title = 'Información Personal';
+  blog = 'persona';
+
   ngOnInit() {}
 }

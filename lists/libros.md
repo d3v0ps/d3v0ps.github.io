@@ -7,7 +7,7 @@ order: 3
 
 # Recomendaciones de Libros
 
-### [GEB](geb)
+### 1. [GEB](geb)
 [![GEB][geb-cover]][geb]
 
 [geb]: https://www.amazon.es/G%C3%B6del-Escher-Bach-Divulgaci%C3%B3n-9788490660690/dp/8490660697
