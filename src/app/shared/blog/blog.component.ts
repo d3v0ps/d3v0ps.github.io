@@ -2,8 +2,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ScullyRoutesService } from '@scullyio/ng-lib';
 import { Title } from '@angular/platform-browser';
-import { pipe } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { HighlightService } from 'src/app/core/services/highlight.service';
 
 @Component({
   selector: 'app-blog',
@@ -46,9 +46,12 @@ export class BlogComponent implements OnInit {
   @Input() title = '';
   @Input() blog = '';
 
+  highlighted = false;
+
   constructor(
     private scully: ScullyRoutesService,
-    private titleService: Title
+    private titleService: Title,
+    private highlightService: HighlightService,
   ) {}
 
   ngOnInit() {
@@ -57,7 +60,10 @@ export class BlogComponent implements OnInit {
         filter(data => data ? true : false)
       )
       .subscribe(
-        data => this.titleService.setTitle(`d3v0ps | ${data.title}`)
+        data => {
+          this.titleService.setTitle(`d3v0ps | ${data.title}`);
+          this.highlightService.highlightAll();
+        }
       );
   }
 }
