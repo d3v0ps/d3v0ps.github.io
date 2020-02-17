@@ -68,19 +68,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @scullyio/ng-lib */
     "./node_modules/@scullyio/ng-lib/__ivy_ngcc__/fesm2015/scullyio-ng-lib.js");
     /* harmony import */
 
 
-    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/platform-browser */
     "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
     /* harmony import */
 
 
-    var _links_list_links_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _links_list_links_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ../links-list/links-list.component */
     "./src/app/shared/links-list/links-list.component.ts");
 
@@ -101,7 +107,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this = this;
 
-          this.scully.getCurrent().subscribe(function (data) {
+          this.scully.getCurrent().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["filter"])(function (data) {
+            return data ? true : false;
+          })).subscribe(function (data) {
             return _this.titleService.setTitle("d3v0ps | ".concat(data.title));
           });
         }
@@ -111,7 +119,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     BlogComponent.ɵfac = function BlogComponent_Factory(t) {
-      return new (t || BlogComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyRoutesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]));
+      return new (t || BlogComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__["ScullyRoutesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"]));
     };
 
     BlogComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -171,7 +179,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("blog", ctx.blog);
         }
       },
-      directives: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_3__["LinksListComponent"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyContentComponent"]],
+      directives: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_4__["LinksListComponent"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__["ScullyContentComponent"]],
       styles: ["[_ngcontent-%COMP%]::slotted(h1)  {\n        color:rgb(51, 6, 37);\n        background-color: rgb(248, 211, 236);\n        padding: 5px;\n        border-radius: 5px;\n        width: fit-content;\n      }"]
     });
     /*@__PURE__*/
@@ -186,9 +194,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }]
       }], function () {
         return [{
-          type: _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyRoutesService"]
+          type: _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__["ScullyRoutesService"]
         }, {
-          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"]
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"]
         }];
       }, {
         title: [{

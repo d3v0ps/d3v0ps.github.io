@@ -35,9 +35,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogComponent", function() { return BlogComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @scullyio/ng-lib */ "./node_modules/@scullyio/ng-lib/__ivy_ngcc__/fesm2015/scullyio-ng-lib.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
-/* harmony import */ var _links_list_links_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../links-list/links-list.component */ "./src/app/shared/links-list/links-list.component.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @scullyio/ng-lib */ "./node_modules/@scullyio/ng-lib/__ivy_ngcc__/fesm2015/scullyio-ng-lib.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
+/* harmony import */ var _links_list_links_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../links-list/links-list.component */ "./src/app/shared/links-list/links-list.component.ts");
+
 
 
 
@@ -51,10 +53,12 @@ class BlogComponent {
         this.blog = '';
     }
     ngOnInit() {
-        this.scully.getCurrent().subscribe(data => this.titleService.setTitle(`d3v0ps | ${data.title}`));
+        this.scully.getCurrent()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["filter"])(data => data ? true : false))
+            .subscribe(data => this.titleService.setTitle(`d3v0ps | ${data.title}`));
     }
 }
-BlogComponent.ɵfac = function BlogComponent_Factory(t) { return new (t || BlogComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyRoutesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"])); };
+BlogComponent.ɵfac = function BlogComponent_Factory(t) { return new (t || BlogComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__["ScullyRoutesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"])); };
 BlogComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BlogComponent, selectors: [["app-blog"]], inputs: { title: "title", blog: "blog" }, decls: 10, vars: 2, consts: [[1, "navbar", "navbar-dark", "bg-dark", "justify-content-between"], [1, "navbar-brand"], [1, "container-fluid", "my-4"], [1, "row"], [1, "col-md-3", "col-12", "mb-2"], [3, "blog"], [1, "col"], [1, "card", "article", "p-4"]], template: function BlogComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 1);
@@ -78,7 +82,7 @@ BlogComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.title);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("blog", ctx.blog);
-    } }, directives: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_3__["LinksListComponent"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyContentComponent"]], styles: ["[_ngcontent-%COMP%]::slotted(h1)  {\n        color:rgb(51, 6, 37);\n        background-color: rgb(248, 211, 236);\n        padding: 5px;\n        border-radius: 5px;\n        width: fit-content;\n      }"] });
+    } }, directives: [_links_list_links_list_component__WEBPACK_IMPORTED_MODULE_4__["LinksListComponent"], _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__["ScullyContentComponent"]], styles: ["[_ngcontent-%COMP%]::slotted(h1)  {\n        color:rgb(51, 6, 37);\n        background-color: rgb(248, 211, 236);\n        padding: 5px;\n        border-radius: 5px;\n        width: fit-content;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BlogComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -116,7 +120,7 @@ BlogComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
     `
                 ]
             }]
-    }], function () { return [{ type: _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_1__["ScullyRoutesService"] }, { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"] }]; }, { title: [{
+    }], function () { return [{ type: _scullyio_ng_lib__WEBPACK_IMPORTED_MODULE_2__["ScullyRoutesService"] }, { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"] }]; }, { title: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], blog: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]

@@ -2,6 +2,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ScullyRoutesService } from '@scullyio/ng-lib';
 import { Title } from '@angular/platform-browser';
+import { pipe } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-blog',
@@ -50,8 +52,12 @@ export class BlogComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.scully.getCurrent().subscribe(
-      data => this.titleService.setTitle(`d3v0ps | ${data.title}`)
-    );
+    this.scully.getCurrent()
+      .pipe(
+        filter(data => data ? true : false)
+      )
+      .subscribe(
+        data => this.titleService.setTitle(`d3v0ps | ${data.title}`)
+      );
   }
 }
