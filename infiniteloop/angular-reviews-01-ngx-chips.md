@@ -20,7 +20,7 @@ Este es el primero de una serie de posts que iré haciendo sobre distintos compo
 El componente que vamos a analizar es: [ngx-chips](https://www.npmjs.com/package/ngx-chips) (v2.1.0 para Angular >= 4)  
 Este componente fue desarrollado por el usuario de Github [Gbuomprisco](https://github.com/Gbuomprisco) inspirándose en el componente de chips de Angular Material.  
 ### Dependencias
-Tiene una dependencia a tener en cuenta: [ng2-material-dropdown](https://www.npmjs.com/package/ng2-material-dropdown)  
+Tiene una dependencia a tener en cuenta: [ng2-material-dropdown](https://www.npmjs.com/package/ng2-material-dropdown). Esta dependencia es un paquete del mismo autor diseñada para realizar dropdowns al estilo material.
 
 ---
 ## Facilidad de Uso
