@@ -29,6 +29,9 @@ import { Component, OnInit } from '@angular/core';
                 <a href="https://www.youtube.com/channel/UC35_waW3xheFB9ex9ju0S7w">Youtube</a>
               </li>
               <li>
+                <a href="https://www.twitch.tv/d3v0ps">Twitch</a>
+              </li>
+              <li>
                 <a href="https://streamlabs.com/d3v0ps/tip">Twitch Donations</a>
               </li>
               <li>
