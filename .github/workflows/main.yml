@@ -1,4 +1,4 @@
-name: Scully Publish
+name: Publish
 on:
   push:
     branches:
@@ -7,14 +7,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout code
         uses: actions/checkout@v1
-      - name: setup Node
+
+      - name: Setup Node
         uses: actions/setup-node@v1
-      - uses: cmgriffing/scully-gh-pages-action@v7
+
+      - name: Build Scully
+        uses: cmgriffing/scully-gh-pages-action@v7
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: master
+
       - name: Set new Git Tag
         uses: azu/action-package-version-to-git-tag@v1
         with:
