@@ -62,3 +62,10 @@ a, .text-primary {
     color: white !important;
   }
 }
+
+
+@media print {
+  app-header, .title-container, .links-container, app-footer {
+    display: none !important;
+  }
+}

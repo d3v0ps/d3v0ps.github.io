@@ -8,18 +8,18 @@ import { HighlightService } from 'src/app/core/services/highlight.service';
 @Component({
   selector: 'app-blog',
   template: `
-    <nav class="navbar navbar-dark bg-dark justify-content-between">
+    <nav class="navbar navbar-dark bg-dark justify-content-between title-container">
       <a class="navbar-brand">{{ title }}</a>
     </nav>
 
     <div class="container-fluid my-4 blog-container">
       <div class="row">
 
-        <div class="col-md-3 col-12 mb-2">
+        <div class="col-md-3 col-12 mb-2 links-container">
           <app-links-list [blog]="blog"></app-links-list>
         </div>
 
-        <div class="col">
+        <div class="col article-container">
           <div class="card article p-4">
             <scully-content></scully-content>
           </div>
