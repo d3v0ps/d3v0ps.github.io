@@ -7,7 +7,10 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 @NgModule({
   imports: [CommonModule, ScullyLibModule],
   declarations: [LinksListComponent, BlogComponent],
-  exports: [LinksListComponent, BlogComponent]
+  exports: [
+    LinksListComponent,
+    BlogComponent
+  ]
 })
 export class SharedModule {
 

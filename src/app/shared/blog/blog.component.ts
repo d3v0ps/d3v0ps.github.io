@@ -12,7 +12,7 @@ import { HighlightService } from 'src/app/core/services/highlight.service';
       <a class="navbar-brand">{{ title }}</a>
     </nav>
 
-    <div class="container-fluid my-4">
+    <div class="container-fluid my-4 blog-container">
       <div class="row">
 
         <div class="col-md-3 col-12 mb-2">

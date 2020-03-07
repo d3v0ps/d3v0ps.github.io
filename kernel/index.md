@@ -1,9 +1,11 @@
 ---
 title: Index
-description: blog description
+description: Bienvenido al Kernel
 publish: false
 ---
 
-# Work In Progress
+# Bienvenido al Kernel
 
-![WIP](assets/pictures/work_in_progress.png)
+En este blog escribo mis pensamientos más personales. 
+
+* [Cuestionario de Proust](kernel/proust-questionnaire)

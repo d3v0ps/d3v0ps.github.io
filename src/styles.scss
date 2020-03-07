@@ -42,8 +42,23 @@ a, .text-primary {
   background: url('https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png')
 }
 
+.blog-container {
+  min-height: 60vh;
+}
+
 .article {
   img {
     max-width: 100%;
+  }
+}
+
+.page-footer {
+  background: $primary-color;
+  color: white;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  a {
+    color: white !important;
   }
 }
