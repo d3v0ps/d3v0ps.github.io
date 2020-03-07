@@ -10,5 +10,15 @@ order: 0
 ### 1. [Visual Studio Code](code)
 [![code][code-cover]][code]
 
+### 2. [Typora](typora)
+[![typora][typora-cover]][typora]
+
+### 3. [Gitkraken](gitkraken)
+[![gitkraken][gitkraken-cover]][gitkraken]
+
 [code]: https://code.visualstudio.com/
-[code-cover]: https://pbs.twimg.com/profile_images/1169325172811153408/iS7hq4Lw_400x400.jpg
+[code-cover]: https://docs.microsoft.com/es-es/dotnet/core/tutorials/media/with-visual-studio-code/open-debug-tab.png
+[typora]: https://typora.io/
+[typora-cover]: https://typora.io/img/windows/screen2.png
+[gitkraken]: https://www.gitkraken.com/
+[gitkraken-cover]: https://www.gitkraken.com/img/og/og-image.jpg
