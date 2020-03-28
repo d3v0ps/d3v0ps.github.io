@@ -31,24 +31,18 @@ Angular ``bpmn-js`` component with Custom Properties Panel Support.
 
 Implements ``ControlValueAccesor``.
 
+[Demo](https://d3v0ps.github.io/ngx-bpmn-modeler)
+
 ---
 
-### [ngx-codex][ngx-codex]
-
-[![ngx-codex][ngx-codex-badge]][ngx-codex]
-
-Angular ``editor.js`` component with ControlValueAccesorTool Support.
-
-Implements ControlValueAccesor.
-
-[x10-launcher]: https://github.com/d3v0ps/angular-nest-starter
-[x10-launcher-demo]: https://d3v0ps.github.io/x10-launcher/
+[x10-launcher]: https://github.com/d3v0ps/x10-launcher
+[x10-launcher-demo]: https://d3v0ps.github.io/x10-launcher
 
 [angular-nest-starter]: https://github.com/d3v0ps/angular-nest-starter
 [angular-nest-starter-demo]: https://d3v0ps.github.io/angular-nest-starter
 
-[ngx-bpmn-modeler]: https://www.npmjs.com/package/@central-factory/ngx-bpmn-modeler
-[ngx-bpmn-modeler-badge]: https://img.shields.io/npm/v/@central-factory/ngx-bpmn-modeler
+[ngx-bpmn-modeler]: https://www.npmjs.com/package/ngx-bpmn-modeler
+[ngx-bpmn-modeler-badge]: https://img.shields.io/npm/v/ngx-bpmn-modeler
 
-[ngx-codex]: https://www.npmjs.com/package/@central-factory/ngx-codex
-[ngx-codex-badge]: https://img.shields.io/npm/v/@central-factory/ngx-codex
+[ngx-codex]: https://www.npmjs.com/package/ngx-codex
+[ngx-codex-badge]: https://img.shields.io/npm/v/ngx-codex
