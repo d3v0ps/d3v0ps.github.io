@@ -29,9 +29,6 @@ const routes: Routes = [
   }, {
     path: 'persona',
     loadChildren: () => import('./persona/persona.module').then(m => m.PersonaModule)
-  }, {
-    path: 'atlas',
-    loadChildren: () => import('./atlas/atlas.module').then(m => m.AtlasModule)
   }
 ];
 

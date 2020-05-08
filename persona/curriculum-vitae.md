@@ -25,6 +25,18 @@ Launcher para Windows 10 inspirado en la UI de Nintendo Switch. Hecho con Angula
 [ngx-bpmn-modeler: https://d3v0ps.github.io/ngx-bpmn-modeler](https://d3v0ps.github.io/ngx-bpmn-modeler)  
 Componente de Angular para bpmn-js  
 
+[ngx-codex: https://d3v0ps.github.io/ngx-codex](https://d3v0ps.github.io/ngx-codex)  
+Componente de Angular para editor.js  
+
+[ngx-gamepad: https://www.npmjs.com/package/ngx-gamepad](https://www.npmjs.com/package/ngx-gamepad)  
+Servicio de Angular para gamecontroller.js
+
+[ngx-sounds: https://www.npmjs.com/package/ngx-sounds](https://www.npmjs.com/package/ngx-sounds)  
+Servicio de Angular para howler.js
+
+[ngx-electronjs: https://www.npmjs.com/package/ngx-electronjs](https://www.npmjs.com/package/ngx-electronjs)  
+Servicio de Angular para electronjs
+
 ---
 
 ## Experiencia Laboral

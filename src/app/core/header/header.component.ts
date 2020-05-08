@@ -52,10 +52,6 @@ export class HeaderComponent {
       slug: 'kernel/index',
       label: 'Kernel'
     },
-    // {
-    //   slug: 'atlas/index',
-    //   label: 'Atlas'
-    // },
     {
       slug: 'lists/software',
       label: 'Lists'

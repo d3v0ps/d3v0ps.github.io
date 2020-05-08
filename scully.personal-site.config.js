@@ -3,12 +3,6 @@ exports.config = {
   projectName: "personal-site",
   outDir: './dist/static',
   routes: {
-    '/atlas/:id': {
-      type: 'contentFolder',
-      id: {
-        folder: "./atlas"
-      }
-    },
     '/persona/:id': {
       type: 'contentFolder',
       id: {
