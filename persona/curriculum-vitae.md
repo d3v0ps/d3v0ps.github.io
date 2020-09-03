@@ -41,10 +41,18 @@ Servicio de Angular para electronjs
 
 ## Experiencia Laboral
 
-**Enero 2020 - Actualidad**             Bilbomática - Bilbao, Spain
+
+**Junio 2020 - Actualidad**             Belike - Valencia, Spain
 
 **Front-End Developer**  
-Me encuentro desarrollando soluciones empresariales para la Unión Europea
+Me encuentro desarrollando software para empresas con Angular 8, TypeScript y SASS
+
+--- 
+
+**Enero 2020 - Junio 2020**             Bilbomática - Bilbao, Spain
+
+**Front-End Developer**  
+Desarrollé soluciones empresariales para la Unión Europea con Angular 8, Typescript y SASS
 
 --- 
 
@@ -55,17 +63,10 @@ Trabajé desarrollando aplicaciones web para el sector bancario y de finanzas co
 
 ---
 
-**Mayo 2017 - Febrero 2018** 			Dedalus GS - Valencia, Spain
+**Septiembre 2016 - Febrero 2018** 			Dedalus GS - Valencia, Spain
 
 **Front-End Developer**  
 Trabajé en el desarrollo de módulos de gestión de hospitales con Angular 4, TypeScript y SASS.
-
----
-
-**Noviembre 2016 - Febrero 2017** 			ATK Advanced Technological Knowledge - Madrid, Spain
-
-**Full-Stack Remote Developer**  
-Trabajé en el desarrollo de un proyecto para un cliente con Angular.js e Ionic y en este caso Sails.js con MongoDB para la parte del back-end.
 
 ---
 
