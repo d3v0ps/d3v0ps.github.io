@@ -1,9 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~bootstrap/dist/css/bootstrap-grid.css';
-@import '~remixicon/fonts/remixicon.css';
 
 $text-color: white;
+$primary-color: #706fd3;
+
+$theme-colors: (
+  "primary": $primary-color,
+);
+
+@import '~bootstrap/scss/bootstrap';
+@import '~remixicon/fonts/remixicon.css';
+@import '~swiper/swiper-bundle';
 
 body, html {
   padding: 0;
@@ -16,4 +23,8 @@ body, html {
 
 a {
   color: $text-color !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-color;
 }
