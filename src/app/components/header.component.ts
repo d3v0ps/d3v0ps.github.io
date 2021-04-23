@@ -7,22 +7,36 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
     <div class="header clearfix">
       <ul class="menu float-left">
         <li class="menu-item" (click)="sectionClick.emit('welcome')"
+          *ngIf="isMainPage"
           [ngClass]="{
             'active': activeSection === 'welcome'
           }">
           Welcome
         </li>
         <li class="menu-item" (click)="sectionClick.emit('work')"
+          *ngIf="isMainPage"
           [ngClass]="{
             'active': activeSection === 'work'
           }">
           Work
         </li>
         <li class="menu-item" (click)="sectionClick.emit('contact')"
+          *ngIf="isMainPage"
           [ngClass]="{
             'active': activeSection === 'contact'
           }">
           Contact
+        </li>
+        <li class="menu-item"
+          *ngIf="!isMainPage">
+          <a [routerLink]="''">
+            Home
+          </a>
+        </li>
+        <li class="menu-item">
+          <a [routerLink]="'portfolio'">
+            Portfolio
+          </a>
         </li>
         <li class="menu-item">
           <a href="blog">
@@ -77,6 +91,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   `]
 })
 export class HeaderComponent {
+
+  @Input() isMainPage = true;
 
   @Input() activeSection: string = null;
 

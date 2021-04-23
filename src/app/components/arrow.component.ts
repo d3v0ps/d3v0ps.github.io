@@ -1,8 +1,8 @@
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import anime from 'animejs/lib/anime.es.js';
-import { from, Observable, of } from 'rxjs';
-import { tap } from 'rxjs/operators';
+import { from, Observable, of, Subject } from 'rxjs';
+import { takeUntil, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-arrow',
@@ -31,7 +31,7 @@ import { tap } from 'rxjs/operators';
     }
   `]
 })
-export class ArrowComponent implements OnInit {
+export class ArrowComponent implements OnInit, OnDestroy {
 
   @Input() showAtStart = true;
   @Input() direction = 'down';
@@ -40,12 +40,19 @@ export class ArrowComponent implements OnInit {
 
   private shown = false;
 
+  private destroy$ = new Subject();
+
   ngOnInit(): void {
     if (!this.showAtStart) {
       return;
     }
 
     setTimeout(() => this.show().subscribe(), 100);
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   show(): Observable<void> {
@@ -67,6 +74,7 @@ export class ArrowComponent implements OnInit {
 
     return from(animation.finished as Promise<void>)
       .pipe(
+        takeUntil(this.destroy$),
         tap(() => document.querySelector<HTMLElement>(`#${this.id}`).classList.add('blinker'))
       );
   }

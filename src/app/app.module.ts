@@ -15,6 +15,7 @@ import { WelcomeComponent } from './components/welcome.component';
 import { WorkComponent } from './components/work.component';
 import { ContactComponent } from './components/contact.component';
 import { HomePage } from './pages/home.page';
+import { PortfolioPage } from './pages/portfolio.page';
 
 // import Swiper core and required modules
 
@@ -30,7 +31,8 @@ SwiperCore.use([Pagination, A11y, Autoplay]);
     WelcomeComponent,
     WorkComponent,
     ContactComponent,
-    HomePage
+    HomePage,
+    PortfolioPage
   ],
   imports: [
     BrowserModule,
