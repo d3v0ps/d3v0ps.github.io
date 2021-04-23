@@ -51,6 +51,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
       padding: 0px;
       margin: 0;
       display: flex;
+      flex-wrap: wrap;
     }
 
     .menu-item {
