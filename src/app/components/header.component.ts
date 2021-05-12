@@ -45,7 +45,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
         </li>
       </ul>
       <ul class="menu float-right">
-        <a class="menu-item menu-item-icon" href="https://instagram.com/aitor93" target="blank">
+        <a class="menu-item menu-item-icon" href="https://instagram.com/aitor_llamas" target="blank">
           <i class="ri-instagram-fill"></i>
         </a>
         <a class="menu-item menu-item-icon" href="https://github.com/d3v0ps" target="blank">
